@@ -1,11 +1,12 @@
-module.exports = (title, description) => {
+module.exports = templateData => {
+    console.log(templateData);
     
         return `
-        # ${title}
+        # ${templateData.title}
     
     ## Description
     
-    ${description}
+    ${templateData.description}
     
     - What was your motivation?
     - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")

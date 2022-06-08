@@ -1,4 +1,6 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
+const generateReadMe = require('./src/page-template');
 
 
 const promptUser = () => {
@@ -90,15 +92,12 @@ const contactInfo = contactData => {
 promptUser()
     .then(contactInfo)
     .then(contactData => {
-        console.log(contactData);
-        // const fs = require('fs');
-// const generateReadMe = require('./src/page-template');
-
-// const pageREADME = generateReadMe(title, description);
+    const pageREADME = generateReadMe(contactData);
 
 // fs.writeFile('./README.md', pageREADME, err => {
 //     if (err) throw err;
 
 //     console.log('README complete! Check out README.md to see the output!');
-// });
+// })
+
     });
