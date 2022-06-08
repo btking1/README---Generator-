@@ -1,6 +1,10 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+<<<<<<< HEAD
 const generateReadMe = require('./src/page-template');
+=======
+// const generateReadMe = require('./src/page-template');
+>>>>>>> develop
 
 const promptUser = () => {
     return inquirer.prompt([
@@ -14,5 +18,12 @@ const promptUser = () => {
             name: 'description',
             message: 'Give a description of the project?'
         }
+<<<<<<< HEAD
     ])
 }
+=======
+    ]);
+};
+
+       
+>>>>>>> develop
