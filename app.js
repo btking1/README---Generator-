@@ -1,29 +1,23 @@
 const fs = require('fs');
-const inquirer = require('inquirer');
-<<<<<<< HEAD
 const generateReadMe = require('./src/page-template');
-=======
-// const generateReadMe = require('./src/page-template');
->>>>>>> develop
 
-const promptUser = () => {
-    return inquirer.prompt([
-        {
-            type: 'input',
-            name: 'title',
-            message: 'What is the name of the project? (Required)'
-        },
-        {
-            type: 'input',
-            name: 'description',
-            message: 'Give a description of the project?'
-        }
-<<<<<<< HEAD
-    ])
-}
-=======
-    ]);
-};
+const profileDataArgs = process.argv.slice(2);
 
-       
->>>>>>> develop
+console.log(profileDataArgs);
+
+const [title, description] = profileDataArgs;
+
+
+// const printProfileData = profileDataArr => {
+//     profileDataArr.forEach(profileItem => console.log(profileItem));
+// }
+
+console.log(title, description);
+
+const pageREADME = generateReadMe(title, description);
+
+fs.writeFile('./README.md', pageREADME, err => {
+    if (err) throw err;
+
+    console.log('README complete! Check out README.md to see the output!');
+});
