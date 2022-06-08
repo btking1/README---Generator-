@@ -1,23 +1,21 @@
-const fs = require('fs');
-const generateReadMe = require('./src/page-template');
+const inquirer = require('inquirer');
+// const fs = require('fs');
+// const generateReadMe = require('./src/page-template');
 
-const profileDataArgs = process.argv.slice(2);
+// const pageREADME = generateReadMe(title, description);
 
-console.log(profileDataArgs);
+// fs.writeFile('./README.md', pageREADME, err => {
+//     if (err) throw err;
 
-const [title, description] = profileDataArgs;
+//     console.log('README complete! Check out README.md to see the output!');
+// });
 
-
-// const printProfileData = profileDataArr => {
-//     profileDataArr.forEach(profileItem => console.log(profileItem));
-// }
-
-console.log(title, description);
-
-const pageREADME = generateReadMe(title, description);
-
-fs.writeFile('./README.md', pageREADME, err => {
-    if (err) throw err;
-
-    console.log('README complete! Check out README.md to see the output!');
-});
+inquirer
+    .prompt([
+        {
+            type: 'input',
+            name: 'title',
+            message: 'What is the title of your project?'
+        }
+    ])
+     .then(answers => console.log(answers));
