@@ -1,7 +1,7 @@
-// const fs = require('fs');
+const fs = require('fs');
 const inquirer = require('inquirer');
 // const generateReadMe = require('./src/page-template');
-s
+
 const promptUser = () => {
     return inquirer.prompt([
         {
@@ -15,7 +15,6 @@ const promptUser = () => {
             message: 'Give a description of the project?'
         }
     ]);
-       
-        };
-        promptUser.then(answers => console.log(answers));
+};
+
        
