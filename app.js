@@ -37,12 +37,23 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'usage',
-            message: 'Provide instructions and examples for use. Include screenshots as needed.'
+            message: 'Provide instructions and examples for use'
         },
+        {
+            type: 'input',
+            name: 'screenshoot1',
+            message:'add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax: [alt text](assets/images/screenshot.png)'
+         },
         {
             type: 'input',
             name: 'credits',
             message: 'List your collaborators, if any, with links to their GitHub profiles.'
+        },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'Select license',
+            choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3', 'AGPLv3']
         },
         {
             type: 'input',
@@ -54,7 +65,7 @@ const promptUser = () => {
 };
      
         
-const contactInfo = contactData => {
+const contactInfo = () => {
     console.log(`
     =================
       Contact Info
@@ -62,7 +73,7 @@ const contactInfo = contactData => {
    `);
 //    if no contact info
    
-    contactData.contact = [];
+    // contactData.contact = [];
 
     return inquirer.prompt([
         {
@@ -82,17 +93,26 @@ const contactInfo = contactData => {
         }
         
     ])
-    .then(contData => {
-      contactData.contact.push(contData);
-      return contactData;
-    })
+    // .then(contData => {
+    //   contactData.contact.push(contData);
+    //   return contactData;
+    // })
     
 };
 
-promptUser()
-    .then(contactInfo)
-    .then(contactData => {
-    const pageREADME = generateReadMe(contactData);
+promptUser().then(answers => {
+    const pageREADME = generateReadMe(answers);
+
+    fs.writeFile('./README.md', pageREADME, err => {
+        if (err) throw err;
+
+        console.log('README complete! Check out README.md to see the output!')
+    })
+});
+    // .then(contactInfo)
+    // .then(answers => {
+    // const pageREADME = generateReadMe(answers)
+    // .then(contactInfo);
 
 // fs.writeFile('./README.md', pageREADME, err => {
 //     if (err) throw err;
@@ -100,4 +120,4 @@ promptUser()
 //     console.log('README complete! Check out README.md to see the output!');
 // })
 
-    });
+    // });
