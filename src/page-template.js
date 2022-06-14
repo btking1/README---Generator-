@@ -1,9 +1,13 @@
 module.exports = templateData => {
     console.log(templateData);
 
+    // https://img.shields.io/github/license/btking1/README-Generator?style=plastic
+
     // const {title, description, motivation, installation, usage, screenschot1, credits, license, tests, github, email } = templateData;
     
         return `
+![LICENSE](https://img.shields.io/github/license/${templateData.github}/${templateData.title}?style=flat-square)
+!c
 # ${templateData.title}
     
 ## Description
@@ -11,13 +15,8 @@ module.exports = templateData => {
 ${templateData.description}
     
 - ${templateData.motivation}
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
     
-## Table of Contents (Optional)
-    
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents 
     
 - [Installation](#installation)
 - [Usage](#usage)
@@ -45,8 +44,7 @@ ${templateData.tests}
 ${templateData.credits} 
     
 ## License
-    For more information about the License, click on the link below.
--[License](https://opensource.org/licenses/${templateData.license})
+Distributed under the ${templateData.license} License. See LICENSE.txt for more information.
 
 ## Questions
     For more information about the project you can go

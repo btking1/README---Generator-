@@ -1,18 +1,14 @@
 
-# undefined
+![LICENSE](https://img.shields.io/github/license/btking1/README-Generator?style=flat-square)
+# README-Generator
     
 ## Description
     
-undefined
+This project allows you build a markdown file from the command line
     
-- undefined
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+- to better coding skills & allow for easier readme creation
     
-## Table of Contents (Optional)
-    
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents 
     
 - [Installation](#installation)
 - [Usage](#usage)
@@ -22,30 +18,29 @@ If your README is long, add a table of contents to make it easy for users to fin
     
 ## Installation
     
-undefined
+1) dL from GitHub
     
 ## Usage
     
-undefined
+
 
 undefined
 
 
 ## Test
       
-undefined
+
     
 ## Credits
     
-undefined 
+none 
     
 ## License
-    For more information about the License, click on the link below.
--[License](https://opensource.org/licenses/undefined)
+Distributed under theMIT License. See LICENSE.txt for more information.
 
 ## Questions
     For more information about the project you can go
     to my GitHub page at the following Link:
 
-- GitHub: asdfasd
-- Email: fdsf
+- GitHub: btking1
+- Email: btking1@gmail.com
