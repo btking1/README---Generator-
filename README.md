@@ -1,46 +1,59 @@
 
-![LICENSE](https://img.shields.io/github/license/btking1/README-Generator?style=flat-square)
+
 # README-Generator
-    
+![contributors-shield](https://img.shields.io/github/contributors/btking1/README-Generator?style=for-the-badge)
+![forks-shield](https://img.shields.io/github/forks/btking1/README-Generator?style=for-the-badge)
+![stars-shield](https://img.shields.io/github/stars/btking1/README-Generator?style=for-the-badge)
+![issues-shield](https://img.shields.io/github/issues/btking1/README-Generator?style=for-the-badge)
+![license-shield](https://img.shields.io/github/license/btking1/README-Generator?style=for-the-badge)
+
 ## Description
+   
+    - This program generates readme.md file using user input from the command line.
     
-This project allows you build a markdown file from the command line
+    - My motivation was to make the readme.md creation process more seemless and stress-free.
     
-- to better coding skills & allow for easier readme creation
+    - Built with: 
+        *JavaScript
+        *Markdown
     
+
 ## Table of Contents 
-    
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [Test](#test)
 - [Credits](#credits)
 - [License](#license)
-    
+- [Questions](#questions)
+
 ## Installation
+
+    - Clone repo. 
+    - Install dependencies using npm install.
+    - From command line, cd into project directory and type:
     
-1) dL from GitHub
-    
+    ```
+    node app.js
+    ``` 
+
 ## Usage
-    
 
-
-undefined
-
+To generate a markdown file using node js.
 
 ## Test
-      
 
-    
-## Credits
-    
-none 
-    
+Run program in command line and then answer questions for README file. Afterwards, answers will be console logged in terminal and README should generate. To test, answers should match with what was generated README text. 
+
+
 ## License
-Distributed under theMIT License. See LICENSE.txt for more information.
+
+Distributed under the MIT License. See LICENSE.txt for more information.
 
 ## Questions
-    For more information about the project you can go
-    to my GitHub page at the following Link:
 
-- GitHub: btking1
-- Email: btking1@gmail.com
+For more information about the project you can go
+to my GitHub page at the following Link:
+
+- GitHub: https://github.com/btking1/README-Generator
+- Email: btking1@email.com

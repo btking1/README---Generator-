@@ -7,7 +7,7 @@ const promptUser = () => {
     {
       type: "input",
       name: "title",
-      message: "What is the title of your project?",
+      message: "What is the title of your project? (prooject title should match GitHub repo name)",
       validate: (titleInput) => {
         if (titleInput) {
           return true;
@@ -38,12 +38,12 @@ const promptUser = () => {
       name: "usage",
       message: "Provide instructions and examples for use",
     },
-    {
-      type: "input",
-      name: "screenshoot1",
-      message:
-        "add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax: [alt text](assets/images/screenshot.png)",
-    },
+    // {
+    //   type: "input",
+    //   name: "screenshoot1",
+    //   message:
+    //     "add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax: [alt text](assets/images/screenshot.png)",
+    // },
     {
       type: "input",
       name: "credits",
@@ -90,15 +90,4 @@ promptUser()
       console.log("README complete! Check out README.md to see the output!");
     });
   });
-// .then(contactInfo)
-// .then(answers => {
-// const pageREADME = generateReadMe(answers)
-// .then(contactInfo);
 
-// fs.writeFile('./README.md', pageREADME, err => {
-//     if (err) throw err;
-
-//     console.log('README complete! Check out README.md to see the output!');
-// })
-
-// });
