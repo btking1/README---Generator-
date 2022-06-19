@@ -24,7 +24,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Test](#test)
-- [Credits](#credits)
 - [License](#license)
 - [Questions](#questions)
 
@@ -41,6 +40,8 @@ node app.js
 ## Usage
 
 To generate a markdown file using node js.
+
+[VIDEO LINK HERE](https://link-url-here.org)
 
 ![..\README---Generator-\README-screenshot.jpg](https://github.com/btking1/README-Generator/blob/main/README-screenshot.jpg)
 
