@@ -8,7 +8,7 @@ const promptUser = () => {
     {
       type: "input",
       name: "title",
-      message: "What is the title of your project? (prooject title should match GitHub repo name)",
+      message: "What is the title of your project? (project title should match GitHub repo name)",
       validate: (titleInput) => {
         if (titleInput) {
           return true;
