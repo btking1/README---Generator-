@@ -15,6 +15,7 @@
     
     - Built with: 
         *JavaScript
+        *Node JS
         *Markdown
     
 
@@ -33,13 +34,15 @@
     - Install dependencies using npm install.
     - From command line, cd into project directory and type:
     
-    ```
-    node app.js
-    ``` 
+```
+node app.js
+``` 
 
 ## Usage
 
 To generate a markdown file using node js.
+
+![..\README---Generator-\README-screenshot.jpg](https://github.com/btking1/README-Generator/blob/main/README-screenshot.jpg)
 
 ## Test
 
