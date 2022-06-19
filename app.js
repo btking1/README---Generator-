@@ -2,6 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateReadMe = require("./src/page-template");
 
+// Prompt start
 const promptUser = () => {
   return inquirer.prompt([
     {
@@ -79,7 +80,9 @@ const promptUser = () => {
     },
   ]);
 };
+// Prompt end
 
+// create readme.md 
 promptUser()
   .then((answers) => {
     const pageREADME = generateReadMe(answers);
